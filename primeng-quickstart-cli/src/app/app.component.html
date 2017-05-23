@@ -1,0 +1,24 @@
+<input type="text" [(ngModel)]="name" pInputText>
+<button type="button" pButton label="Click" icon="fa fa-check" (click)="onClick($event)"></button>
+
+<div>{{message}}</div>
+
+<br />
+
+<p-calendar  [(ngModel)]="value" [showIcon]="true"></p-calendar>
+
+<br />
+
+<nav>
+	<a [routerLink]="['/student']">
+    Student
+  </a>
+  |
+	<a [routerLink]="['update']">
+    Update
+  </a>
+</nav>
+
+<main>
+	<router-outlet></router-outlet>
+</main>
